@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hannah Jennifer | Business Analyst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#0f172a;
+            color:white;
+        }
+        header{
+            padding:60px;
+            text-align:center;
+            background:linear-gradient(135deg,#1e3a8a,#0f172a);
+        }
+        h1{font-size:40px;}
+        section{
+            padding:40px;
+        }
+        .card{
+            background:#1e293b;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:10px;
+            cursor:pointer;
+        }
+        .hidden{display:none;}
+        .skill-bar{
+            background:#334155;
+            border-radius:10px;
+            margin-top:5px;
+        }
+        .skill-bar span{
+            display:block;
+            height:8px;
+            background:#38bdf8;
+            border-radius:10px;
+        }
+        button{
+            padding:10px 20px;
+            background:#38bdf8;
+            border:none;
+            border-radius:20px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hannah Jennifer</h1>
+    <p>Business Analyst | Counterparty Credit Risk | Axiom Developer</p>
+    <button onclick="alert('Resume download coming soon!')">Download CV</button>
+</header>
+
+<section>
+<h2>Professional Summary</h2>
+<p>
+Experienced Business Analyst with expertise in Counterparty Credit Risk,
+Regulatory Reporting, SQL, Sybase, Power BI and Python.
+</p>
+</section>
+
+<section>
+<h2>Work Experience (Click to Expand)</h2>
+
+<div class="card" onclick="toggle(this)">
+<h3>Bank of America (2022–2025)</h3>
+<div class="hidden">
+<ul>
+<li>End-to-end exposure analysis</li>
+<li>Power BI risk dashboards</li>
+<li>SQL & Sybase data validation</li>
+</ul>
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<h3>Morgan Stanley – Axiom Developer</h3>
+<div class="hidden">
+<ul>
+<li>FFIEC, FRY-9C, Y-14 reports</li>
+<li>Axiom Controller View</li>
+<li>Regulatory compliance reporting</li>
+</ul>
+</div>
+</div>
+
+</section>
+
+<section>
+<h2>Technical Skills</h2>
+
+<p>SQL</p>
+<div class="skill-bar"><span style="width:90%"></span></div>
+
+<p>Axiom Reporting</p>
+<div class="skill-bar"><span style="width:85%"></span></div>
+
+<p>Power BI</p>
+<div class="skill-bar"><span style="width:80%"></span></div>
+
+<p>Python</p>
+<div class="skill-bar"><span style="width:75%"></span></div>
+
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>Email: hannahjennife07@gmail.com</p>
+<p>Location: Ireland</p>
+</section>
+
+<script>
+function toggle(card){
+    const content = card.querySelector(".hidden");
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
